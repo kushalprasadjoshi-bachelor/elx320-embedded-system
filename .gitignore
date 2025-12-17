@@ -1,0 +1,11 @@
+# Build files
+*.elf
+*.hex
+build/
+
+# Editor settings
+.vscode/
+
+# OS junk
+.DS_Store
+Thumbs.db
