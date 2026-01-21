@@ -1,11 +1,79 @@
-# Build files
-*.elf
-*.hex
-build/
-
-# Editor settings
-.vscode/
-
-# OS junk
+# ==================================================
+# OS / Editor junk
+# ==================================================
 .DS_Store
 Thumbs.db
+desktop.ini
+*~
+*.swp
+*.swo
+
+.vscode/
+.idea/
+
+# ==================================================
+# ===== XILINX ISE (IMPORTANT) =====
+# ==================================================
+
+# ISE project / GUI state
+*.xise
+*.gise
+
+# Synthesis / translate / map / place & route
+*.ngc
+*.ngr
+*.ncd
+*.pcf
+*.lso
+*.stx
+*.syr
+*.xst
+*.xrpt
+*.cmd_log
+*.prj
+
+# Bitstream
+*.bit
+
+# ISim / simulation
+isim/
+*_isim*
+*.wdb
+isim.cmd
+isim.log
+fuse
+fuse.xmsgs
+fuseRelaunch.cmd
+
+# Xilinx generated folders
+xmsgs/
+ipcore_dir/
+iseconfig/
+xst/
+
+# Xilinx reports & telemetry
+webtalk*
+xilinxsim.ini
+
+# Xilinx ISE reports
+*_summary.html
+*_envsettings.html
+*.html
+
+# Xilinx message folders
+xmsgs/
+_xmsgs/
+
+# ==================================================
+# Temporary / cache
+# ==================================================
+*.log
+*.tmp
+*.cache
+
+# ==================================================
+# Archives
+# ==================================================
+*.zip
+*.tar
+*.tar.gz
