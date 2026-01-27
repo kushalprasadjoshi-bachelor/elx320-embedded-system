@@ -31,6 +31,10 @@ desktop.ini
 *.xrpt
 *.cmd_log
 *.prj
+*.bld
+*.ngd
+*.map
+*.mrp
 
 # Bitstream
 *.bit
@@ -50,6 +54,8 @@ xmsgs/
 ipcore_dir/
 iseconfig/
 xst/
+_ngo/
+xlnx_auto_0_xdb/
 
 # Xilinx reports & telemetry
 webtalk*
