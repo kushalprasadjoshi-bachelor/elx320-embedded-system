@@ -1,35 +1,10 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date:    12:01:33 01/21/2026 
--- Design Name: 
--- Module Name:    Exp04_4x1Mux - Behavioral 
--- Project Name: 
--- Target Devices: 
--- Tool versions: 
--- Description: 
---
--- Dependencies: 
---
--- Revision: 
--- Revision 0.01 - File Created
--- Additional Comments: 
---
+-- Module Name:    Exp03_Alt_4x1Mux - Behavioral 
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
-entity Exp04_4x1Mux is
+entity Exp03_Alt_4x1Mux is
     Port ( A : in  STD_LOGIC;
            B : in  STD_LOGIC;
            C : in  STD_LOGIC;
@@ -37,9 +12,9 @@ entity Exp04_4x1Mux is
            S0 : in  STD_LOGIC;
            S1 : in  STD_LOGIC;
            MUX_OUT : out  STD_LOGIC);
-end Exp04_4x1Mux;
+end Exp03_Alt_4x1Mux;
 
-architecture Behavioral of Exp04_4x1Mux is
+architecture Behavioral of Exp03_Alt_4x1Mux is
 
 begin
     -- MUX logic: select one of A, B, C, D based on S1 and S0

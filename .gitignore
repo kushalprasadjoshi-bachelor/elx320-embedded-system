@@ -16,7 +16,7 @@ desktop.ini
 # ==================================================
 
 # ISE project / GUI state
-*.xise
+# *.xise
 *.gise
 
 # Synthesis / translate / map / place & route
@@ -35,6 +35,7 @@ desktop.ini
 *.ngd
 *.map
 *.mrp
+*.bmm
 
 # Bitstream
 *.bit

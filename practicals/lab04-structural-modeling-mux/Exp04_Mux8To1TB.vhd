@@ -1,36 +1,8 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
--- Create Date:   12:19:39 01/27/2026
--- Design Name:   
--- Module Name:   D:/TEMP/lab04-structural-modeling-mux/Exp04_Mux8To1TB.vhd
--- Project Name:  lab04-structural-modeling-mux
--- Target Device:  
--- Tool versions:  
--- Description:   
--- 
 -- VHDL Test Bench Created by ISE for module: Exp03_Mux8To1
--- 
--- Dependencies:
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
--- Notes: 
--- This testbench has been automatically generated using types std_logic and
--- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
--- to guarantee that the testbench will bind correctly to the post-implementation 
--- simulation model.
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
- 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
  
 ENTITY Exp04_Mux8To1TB IS
 END Exp04_Mux8To1TB;
@@ -100,10 +72,6 @@ BEGIN
       wait for 100 ns;	
 
       -- insert stimulus here 
-		 -- Apply values to inputs and selection signals for all combinations
-        I0 <= '0'; I1 <= '0'; I2 <= '0'; I3 <= '0'; I4 <= '0'; I5 <= '0'; I6 <= '0'; I7 <= '0';
-        S0 <= '0'; S1 <= '0'; S2 <= '0';
-        wait for 100 ns;
         
         -- Test case 1: I0 to I7 with S0, S1, S2
         I0 <= '1'; wait for 100 ns; -- Expected Y = I0

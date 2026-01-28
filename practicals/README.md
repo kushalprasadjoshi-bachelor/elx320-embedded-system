@@ -1,6 +1,6 @@
 # VHDL Laboratory Projects (Xilinx ISE)
 
-This repository contains **VHDL source code (`.vhd`) only** for Embedded Systems laboratory experiments.
+This repository contains **VHDL source code (`.vhd`) only** with a **ISE project defination** for Embedded Systems laboratory experiments.
 All tool-generated files are intentionally excluded to keep the project **clean, portable, and reproducible**.
 
 The projects/labs are designed to be opened and run on **any system with the same Xilinx ISE environment**.
@@ -12,6 +12,12 @@ The projects/labs are designed to be opened and run on **any system with the sam
 ```text
 .
 ├── images
+│    ├── lab01
+│    ├── lab02
+│    ├── ..............
+│    │
+|
+├── docs
 │    ├── lab01
 │    ├── lab02
 │    ├── ..............
@@ -38,9 +44,13 @@ The projects/labs are designed to be opened and run on **any system with the sam
 └── .gitignore
 ```
 
-Each lab folder contains **only VHDL source files**, which are the actual deliverables of the lab work.
+Each lab folder inside practicals contains **only VHDL source files**, which are the actual deliverables of the lab work.
+
+**ISE project defination** file is also added in each folder for the easy opening and running of the projects in the Xilinks ISE environment.
 
 The **outputs** from the lab experiment are added in the images folder under which we have the subfolders for each project/lab.
+
+We also have the printable output documents under the `docs/` folder for each labs.
 
 ---
 
@@ -110,6 +120,13 @@ Xilinx ISE will automatically regenerate:
 
 ---
 
+### ✅ Open ISE Project Defination After Cloning
+
+If you want to use these projects in easy way, you just have to clone the repository and open the `ISE project defination` that is present in each lab.
+No need of the steps 2️⃣3️⃣4️⃣5️⃣ in this case.
+
+---
+
 ## 📌 Why Only `.vhd` Files Are Tracked
 
 * `.vhd` files contain the **actual logic and design**
@@ -126,11 +143,13 @@ This approach ensures:
 ✔ No path or environment issues
 ✔ Professional workflow
 
+`.xise` files are also tracked for easy opening of project in **Xilinx ISE Environment**.
+
 ---
 
 ## 🎓 Academic Note
 
-This repository follows **standard academic and industry practices** for HDL projects.
+This repository follows **standard academic and industry practices** for VHDL projects.
 Only source files are tracked to ensure **clarity, correctness, and reproducibility**.
 
 ---

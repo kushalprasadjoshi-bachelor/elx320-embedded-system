@@ -1,45 +1,17 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
--- Create Date:   11:15:50 01/21/2026
--- Design Name:   
--- Module Name:   D:/lab01-introduction-to-vhdl/Exp06_FuinctionTestBench.vhd
--- Project Name:  lab01-introduction-to-vhdl
--- Target Device:  
--- Tool versions:  
--- Description:   
--- 
--- VHDL Test Bench Created by ISE for module: Exp03_Fuction
--- 
--- Dependencies:
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
--- Notes: 
--- This testbench has been automatically generated using types std_logic and
--- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
--- to guarantee that the testbench will bind correctly to the post-implementation 
--- simulation model.
+-- VHDL Test Bench Created by ISE for module: Exp03_Function
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
+ENTITY Exp06_FunctionTestBench IS
+END Exp06_FunctionTestBench;
  
-ENTITY Exp06_FuinctionTestBench IS
-END Exp06_FuinctionTestBench;
- 
-ARCHITECTURE behavior OF Exp06_FuinctionTestBench IS 
+ARCHITECTURE behavior OF Exp06_FunctionTestBench IS 
  
     -- Component Declaration for the Unit Under Test (UUT)
  
-    COMPONENT Exp03_Fuction
+    COMPONENT Exp03_Function
     PORT(
          A : IN  std_logic;
          B : IN  std_logic;
@@ -60,7 +32,7 @@ ARCHITECTURE behavior OF Exp06_FuinctionTestBench IS
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: Exp03_Fuction PORT MAP (
+   uut: Exp03_Function PORT MAP (
           A => A,
           B => B,
           C => C,

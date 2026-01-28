@@ -1,36 +1,8 @@
 --------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
--- Create Date:   10:30:53 01/27/2026
--- Design Name:   
--- Module Name:   D:/TEMP/lab04-structural-modeling-mux/Exp02_Mux4To1TB.vhd
--- Project Name:  lab04-structural-modeling-mux
--- Target Device:  
--- Tool versions:  
--- Description:   
--- 
 -- VHDL Test Bench Created by ISE for module: Exp01_Mux4To1
--- 
--- Dependencies:
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
--- Notes: 
--- This testbench has been automatically generated using types std_logic and
--- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
--- to guarantee that the testbench will bind correctly to the post-implementation 
--- simulation model.
---------------------------------------------------------------------------------
+----------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
- 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
  
 ENTITY Exp02_Mux4To1TB IS
 END Exp02_Mux4To1TB;
@@ -45,7 +17,6 @@ ARCHITECTURE behavior OF Exp02_Mux4To1TB IS
          I1 : IN  std_logic;
          I2 : IN  std_logic;
          I3 : IN  std_logic;
-         I4 : IN  std_logic;
          S0 : IN  std_logic;
          S1 : IN  std_logic;
          Y : OUT  std_logic
@@ -58,7 +29,6 @@ ARCHITECTURE behavior OF Exp02_Mux4To1TB IS
    signal I1 : std_logic := '0';
    signal I2 : std_logic := '0';
    signal I3 : std_logic := '0';
-   signal I4 : std_logic := '0';
    signal S0 : std_logic := '0';
    signal S1 : std_logic := '0';
 
@@ -73,7 +43,6 @@ BEGIN
           I1 => I1,
           I2 => I2,
           I3 => I3,
-          I4 => I4,
           S0 => S0,
           S1 => S1,
           Y => Y
