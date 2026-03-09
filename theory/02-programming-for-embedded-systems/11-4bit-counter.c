@@ -5,7 +5,7 @@
  *   - Create a 4-bit up counter using PORTA
  *   - Output changes every 1 second
  *   - Counter counts from 0 to 15 repeatedly
- */
+*/
 
 #define F_CPU 1000000UL      // Define CPU clock frequency (1 MHz)
                             // MUST be defined before including delay library
@@ -24,7 +24,7 @@ int main(void)
      * 0x0F = 0000 1111
      * PA0–PA3 → Output (LEDs / output pins)
      * PA4–PA7 → Unchanged (remain input if previously input)
-     */
+    */
     DDRA |= 0x0F;
 
     // -------------------------------------------------------------
@@ -35,18 +35,18 @@ int main(void)
         /*
          * 4-bit counter loop
          * Counts from 0 to 15 (2^4 = 16 states)
-         */
+        */
         for (uint8_t i = 0; i < 16; i++)
         {
             /*
              * Output counter value to PORTA
              * Only lower 4 bits are physically used
-             */
+            */
             PORTA = i;
 
             /*
              * Delay of 1 second between counts
-             */
+            */
             _delay_ms(1000);
         }
     }
@@ -87,5 +87,5 @@ int main(void)
      * 7. Beginner Tip:
      *    - You can connect LEDs with resistors to PA0–PA3
      *    - Observe binary counting visually
-     */
+    */
 }

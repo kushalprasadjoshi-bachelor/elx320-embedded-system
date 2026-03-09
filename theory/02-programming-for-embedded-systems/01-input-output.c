@@ -8,7 +8,7 @@
  * - PORTB is configured as output
  * - In an infinite loop, the program continuously reads PORTA
  *   and writes the same value to PORTB, effectively "mirroring" the input
- */
+*/
 
 #include <avr/io.h>    // AVR microcontroller register definitions
 #include <stdint.h>    // For uint8_t (unsigned 8-bit data type)
@@ -66,5 +66,5 @@ int main(void) {
      *    - Always configure DDR registers before using PORT or PIN 
      *    - Avoid leaving microcontroller pins floating; use pull-up resistors if needed
      *    - This program does not include delays; adding _delay_ms() can make LED changes visible
-     */
+    */
 }

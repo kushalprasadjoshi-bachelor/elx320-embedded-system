@@ -63,7 +63,7 @@
  * Timer configuration:
  *
  *      Prescaler = 1024 -> TCCR0 = 0x05
- */
+*/
 
 #define F_CPU 16000000UL
 #include <avr/io.h>
@@ -116,7 +116,7 @@ int main(void)
  *   3. Each overflow toggles TOV0 flag
  *      which is cleared after each iteration.
  * -------------------------------------------------------------
- */
+*/
 void Timer0Delay(void)
 {
     uint8_t i;
@@ -170,4 +170,4 @@ void Timer0Delay(void)
  * 5. LED Blinking
  *    - Each Timer0Delay() generates 500 ms delay
  *    - LED toggles -> full period = 1 s
- */
+*/

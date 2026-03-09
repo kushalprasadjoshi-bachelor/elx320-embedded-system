@@ -98,7 +98,7 @@
  *
  * Prescaler = 64
  *
- */
+*/
 
 #define F_CPU 16000000UL      // Define CPU clock frequency (16 MHz)
 
@@ -125,7 +125,7 @@ int main(void)
      *
      * (1 << PB4) shifts 1 to bit position of PB4.
      * This sets PB4 as an output pin.
-     */
+    */
 
     DDRB |= (1 << PB4);
 
@@ -144,7 +144,7 @@ int main(void)
          *      1 -> 0
          *
          * This turns the LED ON and OFF.
-         */
+        */
 
         PORTB ^= (1 << PB4);
 
@@ -152,7 +152,7 @@ int main(void)
         /*
          * Call Timer0 delay function
          * Generates approximately 1 ms delay
-         */
+        */
 
         Timer0Delay();
     }
@@ -177,7 +177,7 @@ int main(void)
  *      4. Stop timer
  *      5. Clear overflow flag
  *
- */
+*/
 
 void Timer0Delay()
 {
@@ -194,7 +194,7 @@ void Timer0Delay()
      *      6 -> 255
      *
      * Which gives exactly 250 counts.
-     */
+    */
 
     TCNT0 = 0x06;
 
@@ -211,7 +211,7 @@ void Timer0Delay()
      *  0    1    1
      *
      * Prescaler = 64
-     */
+    */
 
     TCCR0 = 0x03;
 
@@ -229,7 +229,7 @@ void Timer0Delay()
      *      255 -> overflow -> 0
      *
      * TOV0 flag becomes 1.
-     */
+    */
 
     while ((TIFR & (1 << TOV0)) == 0);
 
@@ -251,7 +251,7 @@ void Timer0Delay()
      *      Writing 0 -> no effect
      *
      * Therefore:
-     */
+    */
 
     TIFR = (1 << TOV0);
 }
@@ -298,4 +298,4 @@ void Timer0Delay()
  *
  *    Therefore full ON-OFF cycle = 2 ms
  *
- */
+*/

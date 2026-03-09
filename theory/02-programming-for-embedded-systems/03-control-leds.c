@@ -4,7 +4,7 @@
  * Objective:
  *   Control LEDs connected to PB3 and PB6 using corresponding inputs from PORTD.
  *   Other PORTB pins must remain OFF and not float.
- */
+*/
 
 #include <avr/io.h>     // AVR register definitions
 #include <stdint.h>     // For uint8_t data type
@@ -76,5 +76,5 @@ int main(void) {
      * 7. Beginner tip:
      *    - Always mask bits when controlling selected pins
      *    - Never write entire PORT unless all pins are intended to be used
-     */
+    */
 }

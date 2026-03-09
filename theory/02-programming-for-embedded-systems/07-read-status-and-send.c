@@ -4,7 +4,7 @@
  * Objective:
  *   - If PC3 = 1 → send 0x10 to PORTA
  *   - If PC3 = 0 → send 0x10 to PORTB
- */
+*/
 
 #include <avr/io.h>
 #include <stdint.h>
@@ -82,5 +82,5 @@ int main(void) {
      * 8. Beginner tip:
      *    - Always mask input pins to avoid affecting other bits
      *    - Ensure DDR is correctly set for input/output before use
-     */
+    */
 }

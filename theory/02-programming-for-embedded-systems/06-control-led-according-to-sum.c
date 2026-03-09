@@ -5,7 +5,7 @@
  *   - Read 8-bit numbers from PORTA and PORTB
  *   - Find their sum (signed)
  *   - Turn ON LED on PC3 if result is negative, OFF otherwise
- */
+*/
 
 #include <avr/io.h>     // AVR register definitions
 #include <stdint.h>     // For int8_t and int16_t data types
@@ -81,5 +81,5 @@ int main(void) {
      * 6. Practical use:
      *    - Monitor sum of two digital signals
      *    - LED indicates negative result
-     */
+    */
 }

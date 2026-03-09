@@ -6,7 +6,7 @@
  *   - Method 1: Alternate pattern assignment
  *   - Method 2: XOR toggling
  *   - Method 3: Bitwise NOT toggling
- */
+*/
 
 #define F_CPU 1000000UL      // Define CPU clock frequency (1 MHz)
                             // MUST be defined before including delay library
@@ -84,5 +84,5 @@ int main(void) {
      * 7. Beginner tip:
      *    - You can choose any of the three methods depending on preference
      *    - XOR and NOT methods are useful for dynamic patterns
-     */
+    */
 }

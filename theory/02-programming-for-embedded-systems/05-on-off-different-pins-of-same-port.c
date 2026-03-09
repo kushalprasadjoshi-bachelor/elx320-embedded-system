@@ -4,7 +4,7 @@
  * Objective:
  *   Set PD1 HIGH and PD4 LOW while keeping other pins unchanged.
  *   Useful for controlling LEDs or digital outputs.
- */
+*/
 
 #include <avr/io.h>     // AVR register definitions
 #include <stdint.h>     // For uint8_t data type
@@ -63,5 +63,5 @@ int main(void) {
      * 6. Beginner tip:
      *    - Always wrap embedded output programs in while(1)
      *    - Avoid writing to all pins unless intended
-     */
+    */
 }

@@ -4,7 +4,7 @@
  * Objective:
  *   To send all possible 8-bit values (0 to 255) sequentially to PORTC.
  *   This is useful for testing LEDs, DACs, or understanding binary counting.
- */
+*/
 
 #include <avr/io.h>    // AVR register definitions
 #include <stdint.h>    // For uint16_t data type
@@ -68,5 +68,5 @@ int main(void) {
      *    - Testing LED connections
      *    - Understanding binary counting
      *    - Checking PORT functionality
-     */
+    */
 }

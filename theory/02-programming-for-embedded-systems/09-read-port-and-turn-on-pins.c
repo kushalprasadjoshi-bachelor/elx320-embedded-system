@@ -5,7 +5,7 @@
  *   - Read an 8-bit number from PORTA
  *   - If even → turn ON PB0, PB1 OFF
  *   - If odd  → turn ON PB1, PB0 OFF
- */
+*/
 
 #include <avr/io.h>
 #include <stdint.h>
@@ -74,5 +74,5 @@ int main(void) {
      * 7. Beginner tip:
      *    - Always clear previous output bits when toggling LEDs
      *    - Helps prevent unwanted multiple LEDs being ON simultaneously
-     */
+    */
 }

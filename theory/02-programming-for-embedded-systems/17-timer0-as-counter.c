@@ -94,7 +94,7 @@
  * Therefore:
  *
  * Each falling edge on PB0 increments Timer0.
- */
+*/
 
 #define F_CPU 8000000UL
 #include <avr/io.h>
@@ -107,7 +107,7 @@ int main(void)
      * ---------------------------------------------------------
      *
      * PORTC will display the counter value.
-     */
+    */
 
     DDRC = 0xFF;
 
@@ -117,7 +117,7 @@ int main(void)
      * ---------------------------------------------------------
      *
      * External pulses will be applied here.
-     */
+    */
 
     DDRB &= ~(1 << PB0);
 
@@ -125,7 +125,7 @@ int main(void)
      * ---------------------------------------------------------
      * Step 3: Initialize Timer0 Counter
      * ---------------------------------------------------------
-     */
+    */
 
     TCNT0 = 0;
 
@@ -136,7 +136,7 @@ int main(void)
      *
      * External clock on T0 pin
      * Falling edge trigger
-     */
+    */
 
     TCCR0 = 0x06;
 
@@ -144,7 +144,7 @@ int main(void)
      * ---------------------------------------------------------
      * Step 5: Infinite Loop
      * ---------------------------------------------------------
-     */
+    */
 
     while (1)
     {
@@ -153,20 +153,20 @@ int main(void)
          *
          * Each external pulse increases TCNT0
          * so PORTC shows the pulse count.
-         */
+        */
 
         PORTC = TCNT0;
 
         /*
          * When counter overflows (255 -> 0),
          * TOV0 flag becomes 1.
-         */
+        */
 
         if (TIFR & (1 << TOV0))
         {
             /*
              * Clear overflow flag
-             */
+            */
 
             TIFR = (1 << TOV0);
         }
@@ -224,4 +224,4 @@ int main(void)
  *    - Pulse counting
  *    - Frequency measurement
  *    - Event counting
- */
+*/

@@ -34,7 +34,7 @@
  * Timer Configuration:
  *   TCNT0 = 0xCE  -> Timer starts counting from 206
  *   TCCR0 = 0x01  -> Prescaler = 1 (No prescaling)
- */
+*/
 
 #define F_CPU 8000000UL        // Define CPU clock frequency (8 MHz)
 
@@ -59,7 +59,7 @@ int main(void)
      *
      * (1 << PB3) shifts 1 to bit position of PB3
      * This sets PB3 as an output pin
-     */
+    */
 
     DDRB |= (1 << PB3);
 
@@ -77,14 +77,14 @@ int main(void)
          * 1 -> 0
          *
          * This helps generate the square wave
-         */
+        */
 
         PORTB ^= (1 << PB3);
 
         /*
          * Call delay function
          * This generates half-period delay (6.25 µs)
-         */
+        */
 
         Timer0Delay();
     }
@@ -107,7 +107,7 @@ int main(void)
  *   4. Stop timer
  *   5. Clear overflow flag
  * -------------------------------------------------------------
- */
+*/
 
 void Timer0Delay(void)
 {
@@ -119,7 +119,7 @@ void Timer0Delay(void)
      *
      * Loading 0xCE (206) ensures timer counts exactly 50 ticks
      * before overflowing.
-     */
+    */
 
     TCNT0 = 0xCE;
 
@@ -134,7 +134,7 @@ void Timer0Delay(void)
      *
      * Prescaler = 1
      * Timer runs at system clock (8 MHz)
-     */
+    */
 
     TCCR0 = 0x01;
 
@@ -149,7 +149,7 @@ void Timer0Delay(void)
      *
      * When TCNT0 counts from 255 -> 0,
      * overflow occurs and TOV0 becomes 1.
-     */
+    */
 
     while ((TIFR & (1 << TOV0)) == 0);
 
@@ -179,7 +179,7 @@ void Timer0Delay(void)
      *                 writing 1 to that bit (W1C register)
      *
      * clears the overflow flag.
-     */
+    */
 
     TIFR = (1 << TOV0);
 }
@@ -230,4 +230,4 @@ void Timer0Delay(void)
  *
  *    Writing '0' does nothing.
  *
- */
+*/

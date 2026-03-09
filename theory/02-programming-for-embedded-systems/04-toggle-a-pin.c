@@ -4,7 +4,7 @@
  * Objective:
  *   Continuously toggle the 6th pin of PORTC (PC5) without affecting other pins.
  *   Useful for blinking a single LED connected to PC5.
- */
+*/
 
 #include <avr/io.h>     // AVR register definitions
 #include <stdint.h>     // For uint8_t data type
@@ -65,5 +65,5 @@ int main(void) {
      * 6. Practical usage:
      *    - Single LED blink
      *    - Understanding bitwise operations in embedded C
-     */
+    */
 }

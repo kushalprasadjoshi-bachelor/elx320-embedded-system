@@ -6,7 +6,7 @@
  *   - PA0 PA1 = 01 → send '1' to PORTB
  *   - PA0 PA1 = 10 → send '2' to PORTB
  *   - PA0 PA1 = 11 → send '3' to PORTB
- */
+*/
 
 #include <avr/io.h>
 #include <stdint.h>
@@ -83,5 +83,5 @@ int main(void) {
      * 7. Beginner tip:
      *    - Use switch-case for readability when multiple input combinations
      *    - Always mask input pins to avoid affecting other bits
-     */
+    */
 }
