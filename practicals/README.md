@@ -1,5 +1,7 @@
 # VHDL Laboratory Projects (Xilinx ISE)
 
+[Guide for Setup of Xilinx ISE](setup-xilinx)
+
 This repository contains **VHDL source code (`.vhd`) only** with a **ISE project defination** for Embedded Systems laboratory experiments.
 All tool-generated files are intentionally excluded to keep the project **clean, portable, and reproducible**.
 
