@@ -23,7 +23,7 @@ flowchart LR
 
     S3 -->|0| S0
     S3 -->|1| S0
-    S3 --> Soda Dispense
+    S3 --> SD[Soda Dispense]
 ```
 
 ---
