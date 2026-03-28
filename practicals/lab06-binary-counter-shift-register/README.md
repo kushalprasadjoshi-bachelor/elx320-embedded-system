@@ -59,11 +59,11 @@ end Behavioral;
 
 **Output:**
 
-![RTL Schematic Block](../../images/lab06/Op01_RTLSchematicBlock.PNG)
+![RTL Schematic Block](../../images/lab06/Op01_RTLSchematicBlock.png)
 
 *Figure 1: RTL Schematic Block of Four Bit Binary Counter*
 
-![RTL Schematic Diagram](../../images/lab06/Op01_RTLSchematicDiagram.PNG)
+![RTL Schematic Diagram](../../images/lab06/Op01_RTLSchematicDiagram.png)
 
 *Figure 2: RTL Schematic Diagram of Four Bit Binary Counter*
 
@@ -106,11 +106,11 @@ end Behavioral;
 
 **Output:**
 
-![RTL Schematic Block](../../images/lab06/Op02_RTLSchematicBlock.PNG)
+![RTL Schematic Block](../../images/lab06/Op02_RTLSchematicBlock.png)
 
 *Figure 3: RTL Schematic Block of Four Bit Binary Register*
 
-![RTL Schematic Diagram](../../images/lab06/Op02_RTLSchematicDiagram.PNG)
+![RTL Schematic Diagram](../../images/lab06/Op02_RTLSchematicDiagram.png)
 
 *Figure 4: RTL Schematic Diagram of Four Bit Binary Register*
 
