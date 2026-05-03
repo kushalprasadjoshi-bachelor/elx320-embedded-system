@@ -22,7 +22,7 @@
 * Useful for modular design and hierarchical modeling.
 
 **Example:**
-``vhdl
+```vhdl
 ARCHITECTURE structural of AND_Gate IS
     COMPONENT NAND_Gate
         PORT (
@@ -43,6 +43,7 @@ BEGIN
     Y <= NOT N1; -- Convert NAND to AND
 
 END structural;
+```
 
 ---
 
